@@ -42,3 +42,14 @@
 .header.sticky-action .header__toggle {
   @apply text-black;
 }
+
+/* ===== FEATURE SECTION ===== */
+.feature__content-item {
+  @apply inline-flex items-center justify-self-center gap-2 text-grey;
+}
+.feature__content-icon {
+  @apply inline-flex p-[.2rem] bg-blue rounded-full text-[1rem] text-white;
+}
+.feature__content:nth-child(2) .feature__content-icon {
+  @apply bg-yellow;
+}
