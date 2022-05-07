@@ -1,10 +1,10 @@
+/* ===== FONT GOOGLE ===== */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik:wght@700&display=swap");
+
 /* ===== Add the Tailwind directives to your CSS ===== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* ===== FONT GOOGLE ===== */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik:wght@700&display=swap");
 
 /* ===== REUSABLE CSS CLASS ===== */
 @layer components {
@@ -34,4 +34,11 @@
 }
 .header__menu.show-menu {
   @apply opacity-100 scale-y-100;
+}
+.header.sticky-action {
+  @apply bg-white shadow-[2px_0_12px_rgba(0,0,0,0.1)];
+}
+.header.sticky-action .header__logo,
+.header.sticky-action .header__toggle {
+  @apply text-black;
 }

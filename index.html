@@ -33,7 +33,7 @@
       >
         <a
           href="#"
-          class="header__logo inline-flex items-center gap-2 text-[20px] text-black font-title font-bold"
+          class="header__logo inline-flex items-center gap-2 text-[20px] text-white font-title font-bold transition-all duration-400"
         >
           <img src="./src/img/logo.svg" alt="" class="header__logo-icon w-12" />
           Andy.
@@ -64,7 +64,7 @@
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-white cursor-pointer transition-all duration-400"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
@@ -72,6 +72,44 @@
       </div>
     </header>
     <!-- ===== HEADER SECTION ===== -->
+
+    <main class="main overflow-hidden">
+      <!-- ===== HOME SECTION ===== -->
+      <section class="home section relative">
+        <img
+          src="./src/img/home-bg.png"
+          alt=""
+          class="home__bg absolute top-0 left-0 w-full h-[80%] rounded-br-[2rem] rounded-bl-[2rem] -z-10"
+        />
+
+        <div class="home__container container grid gap-12">
+          <div class="home__data text-center justify-self-center">
+            <h1 class="home__title section-title text-white">
+              Manage your daily task today with simple
+            </h1>
+            <p class="home__text section-text text-white">
+              Task-Andy is built for every member if your software team to plan,
+              track, and release great software.
+            </p>
+            <div class="home__buttons inline-flex items-center gap-2">
+              <a href="#" class="home__buttons-button">
+                <img src="./src/img/home-button-(1).svg" alt="" />
+              </a>
+              <a href="#" class="home__buttons-button">
+                <img src="./src/img/home-button-(2).svg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="./src/img/home-img.png"
+            alt=""
+            class="home__img justify-self-center"
+          />
+        </div>
+      </section>
+      <!-- ===== HOME SECTION ===== -->
+    </main>
 
     <!-- ===== SWIPER JS ===== -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
