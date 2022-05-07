@@ -22,3 +22,16 @@
     @apply flex justify-center py-4 px-8 bg-yellow rounded-[1rem] text-[16px] text-white font-medium;
   }
 }
+
+/* ===== HEADER SECTION ===== */
+@media screen and (max-width: 767px) {
+  .header__menu {
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-white shadow-[0_0_12px_rgba(0,0,0,0.1)] rounded-[2rem] transition-all duration-400 opacity-0 origin-[0%_0%] scale-y-0;
+  }
+}
+.header__link.active-link {
+  @apply text-yellow font-medium;
+}
+.header__menu.show-menu {
+  @apply opacity-100 scale-y-100;
+}
