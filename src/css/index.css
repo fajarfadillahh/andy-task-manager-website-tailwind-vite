@@ -82,3 +82,49 @@
 .testimonial__container .swiper-pagination-bullet-active {
   @apply w-[2rem] h-[10px] rounded-[1rem] bg-white;
 }
+
+/* ===== PRICING SECTION ===== */
+.pricing__data-button {
+  @apply inline-flex justify-center py-3 px-5 rounded-[.75rem] text-black font-medium cursor-pointer;
+}
+.pricing__data-button:nth-child(1) {
+  @apply bg-white;
+}
+.pricing__content {
+  @apply grid w-[310px] gap-8 grid-rows-[max-content] p-8 border-[1.5px] border-solid border-[rgba(0,0,0,0.1)] rounded-[1.5rem] transition-all duration-400 hover:bg-white hover:border-white hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)];
+}
+.pricing__content-title {
+  @apply text-[20px] text-black font-bold mb-2;
+}
+.pricing__content-text {
+  @apply text-[16px] text-grey leading-text;
+}
+.pricing__content-list {
+  @apply flex flex-col gap-3;
+}
+.pricing__content-item {
+  @apply inline-flex items-center gap-2 text-[16px] text-grey;
+}
+.pricing__content-icon {
+  @apply inline-flex text-[1.2rem] text-white p-[.1rem] bg-yellow rounded-full;
+}
+.pricing__content-price {
+  @apply text-[48px] text-yellow font-title font-bold;
+}
+.pricing__content-tag {
+  @apply text-[12px] text-grey;
+}
+.pricing__content:nth-child(1) .pricing__content-price {
+  @apply text-blue;
+}
+.pricing__content:nth-child(1) .pricing__content-icon,
+.pricing__content:nth-child(1) .pricing__content-button {
+  @apply bg-blue;
+}
+.pricing__content:nth-child(3) .pricing__content-price {
+  @apply text-red;
+}
+.pricing__content:nth-child(3) .pricing__content-icon,
+.pricing__content:nth-child(3) .pricing__content-button {
+  @apply bg-red;
+}
