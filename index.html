@@ -29,7 +29,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center md:relative"
       >
         <a
           href="#"
@@ -39,8 +39,11 @@
           Andy.
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6"
+          id="header-menu"
+        >
+          <ul class="header__list flex flex-col gap-6 md:flex-row">
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -58,13 +61,13 @@
             </li>
           </ul>
 
-          <a href="#" class="header__button section-button mt-6"
+          <a href="#" class="header__button section-button mt-6 md:mt-0"
             >Create Account</a
           >
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-white cursor-pointer transition-all duration-400"
+          class="header__toggle inline-flex text-[1.5rem] text-white cursor-pointer transition-all duration-400 md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
@@ -83,7 +86,9 @@
         />
 
         <div class="home__container container grid gap-12">
-          <div class="home__data text-center justify-self-center xs:w-[400px]">
+          <div
+            class="home__data text-center justify-self-center xs:w-[400px] md:w-[480px]"
+          >
             <h1 class="home__title section-title text-white">
               Manage your daily task today with simple
             </h1>
@@ -121,7 +126,7 @@
           </p>
 
           <div
-            class="partner__group grid grid-cols-[repeat(2,_max-content)] justify-center gap-4"
+            class="partner__group grid grid-cols-[repeat(2,_max-content)] justify-center gap-4 md:grid-cols-[repeat(3,_max-content)]"
           >
             <img
               src="./src/img/partner-img-(1).png"
@@ -164,7 +169,7 @@
           <div class="feature__group grid gap-40">
             <div class="feature__content grid gap-12">
               <div
-                class="feature__content-data grid justify-self-center text-center xs:w-[400px]"
+                class="feature__content-data grid justify-self-center text-center xs:w-[400px] md:w-[480px]"
               >
                 <h1 class="feature__content-title section-title">
                   Customize your tasks for any project.
@@ -200,7 +205,7 @@
 
             <div class="feature__content grid gap-12">
               <div
-                class="feature__content-data grid justify-self-center text-center xs:w-[400px]"
+                class="feature__content-data grid justify-self-center text-center xs:w-[400px] md:w-[480px]"
               >
                 <h1 class="feature__content-title section-title">
                   Stay on track to hit project goals.
